@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is it an anagram?</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Is it an anagram?</h1>
+      <p>
+        This tool is here to check if two given strings contain the exact same
+        characters. Or short: if they are an anagramm to each other.
+      </p>
+
+      <form id="form" action="#">
+        <div class="inputs">
+          <div>
+            <label for="firstString">First word</label>
+            <input
+              type="text"
+              name="firstString"
+              id="firstString"
+              placeholder="First word"
+              size="20"
+              required
+            />
+          </div>
+          <div>
+            <label for="secondString">Second word</label>
+            <input
+              type="text"
+              name="secondString"
+              id="secondString"
+              placeholder="Second word"
+              size="20"
+              required
+            />
+          </div>
+        </div>
+        <input id="submit" type="submit" value="Compare characters" />
+      </form>
+      <p id="result"></p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
