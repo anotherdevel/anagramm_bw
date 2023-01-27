@@ -7,8 +7,13 @@ import "./style.scss";
  * @returns {boolean}
  */
 function compareChars(firstString: string, secondString: string): boolean {
-  const firstStringChars: string[] = firstString.toLowerCase().split("").sort();
+  const firstStringChars: string[] = firstString
+    .replace(/[^a-zA-Z]/g, "")
+    .toLowerCase()
+    .split("")
+    .sort();
   const secondStringChars: string[] = secondString
+    .replace(/[^a-zA-Z]/g, "")
     .toLowerCase()
     .split("")
     .sort();
