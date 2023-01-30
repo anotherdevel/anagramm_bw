@@ -12,7 +12,7 @@ cd directory_name
 yarn install
 
 # For development run
-yarn start
+yarn dev
 
 # To build
 yarn build
